@@ -1,5 +1,6 @@
 #===================================================
-# Sample vampire material file V3+
+# Sample vampire material file for Nickel
+# Provided for the vampire workshop 2019.
 #===================================================
 
 #---------------------------------------------------
@@ -8,6 +9,8 @@
 material:num-materials=1
 #---------------------------------------------------
 # Material 1 Nickel Generic
+# Parameters available from 
+# https://doi.org/10.1088%2F0953-8984%2F26%2F10%2F103202
 #---------------------------------------------------
 material[1]:material-name=Ni
 material[1]:damping-constant=0.01

@@ -1,7 +1,8 @@
 #------------------------------------------
 # Sample vampire input file to perform
-# benchmark calculation for v3.0
-#
+# a Curie temperature simulation for Ni.
+# Provided as part of the 2019 Vampire 
+# Workshop.
 #------------------------------------------
 
 #------------------------------------------
@@ -36,19 +37,22 @@ sim:equilibration-time-steps=1000
 sim:loop-time-steps=1000
 sim:time-step=1.0E-16
 
+sim:equilibration-time-steps=10000
+sim:total-time-steps=50000
+sim:laser-pulse-power=5.0
+sim:laser-pulse-temporal-profile=two-temperature
+
 #------------------------------------------
 # Program and integrator details
 #------------------------------------------
-sim:program=curie-temperature
-sim:integrator=monte-carlo
+sim:program=laser-pulse
+sim:integrator=llg-heun 
+sim:time-step=1.0e-16
 
 #------------------------------------------
 # data output
 #------------------------------------------
-output:time-steps
-output:temperature
-output:magnetisation
-output:mean-magnetisation-length
-
-screen:temperature
-screen:mean-magnetisation-length
+output:real-time
+output:electron-temperature
+output:phonon-temperature
+output:magnetisation-length

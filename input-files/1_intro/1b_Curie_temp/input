@@ -1,12 +1,22 @@
 #------------------------------------------
+# Sample vampire input file to perform
+# a Curie temperature simulation for Ni.
+# Provided as part of the 2019 Vampire 
+# Workshop.
+# This file is left incomplete as an
+# exercise, try to choose some reasonable
+# parameters based on 1b_Ni
+#------------------------------------------
+
+#------------------------------------------
 # Creation attributes:
 #------------------------------------------
-create:crystal-structure=sc
+create:crystal-structure=fcc
 
 #------------------------------------------
 # System Dimensions:
 #------------------------------------------
-dimensions:unit-cell-size = 3.54 !A
+dimensions:unit-cell-size = 3.524 !A
 dimensions:system-size-x = X !nm
 dimensions:system-size-y = Y !nm
 dimensions:system-size-z = Z !nm
@@ -20,23 +30,23 @@ material:file=Ni.mat
 # Simulation attributes:
 #------------------------------------------
 
-sim:loop-time-steps=N
-sim:time-step=1.0e-15
-sim:temperature = 0
-sim:maximum-applied-field-strength = T !T
-sim:applied-field-strength-increment = T !T
-sim:applied-field-unit-vector = direction
-
+sim:minimum-temperature=TMIN
+sim:maximum-temperature=TMAX
+sim:temperature-increment=TSTEP
+sim:loop-time-steps=STEPS
+sim:equilibration-time-steps=EQUILSTEP
+sim:loop-time-steps=LOOPSTEP
+sim:time-step=DELTA
 
 #------------------------------------------
 # Program and integrator details
 #------------------------------------------
-sim:program=hysteresis-loop
-sim:integrator=llg-heun
+sim:program=curie-temperature
+sim:integrator=monte-carlo
 
 #------------------------------------------
 # data output
 #------------------------------------------
 output:real-time
-output:applied-field-strength
-output:material-magnetisation
+output:temperature
+output:magnetisation
