@@ -25,7 +25,7 @@ sim:time-step=1.0e-15
 sim:temperature = 0
 sim:maximum-applied-field-strength = T !T
 sim:applied-field-strength-increment = T !T
-Sim:applied-field-unit-vector = direction
+sim:applied-field-unit-vector = direction
 
 
 #------------------------------------------
