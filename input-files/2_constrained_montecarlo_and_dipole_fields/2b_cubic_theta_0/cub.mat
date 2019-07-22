@@ -1,5 +1,9 @@
 #------------------------------------------
-# Material file cubic anisotropy
+# Sample vampire material file for a 
+# material with cubic anisotropy.
+# Provided as part of the 2019 Vampire 
+# Workshop.
+#------------------------------------------
 #---------------------------------------------------
 # Number of Materials
 #---------------------------------------------------

@@ -1,5 +1,16 @@
 #------------------------------------------
-# Vampire cmc input file
+# Sample vampire input file to perform
+# a constrained monte carlo simulation for
+# calculating torque as a result of anisotropy 
+# of a material with uniaxial anisotropy 
+# with a varying angle from the easy axis.
+# Currently, this simulation takes ~50m
+# to run on a single core, try selecting 
+# a small range of temperatures to reduce 
+# this.
+# Provided as part of the 2019 Vampire 
+# Workshop.
+#------------------------------------------
 #------------------------------------------
 # Creation attributes:
 #------------------------------------------
@@ -24,9 +35,12 @@ material:file=uni.mat
 #------------------------------------------
 # Simulation attributes:                   
 #------------------------------------------
+######################################
 sim:minimum-temperature = 0               
 sim:maximum-temperature = 2000
 sim:temperature-increment = 100
+######################################
+
 sim:equilibration-time-steps = 5000
 sim:loop-time-steps = 5000
                           

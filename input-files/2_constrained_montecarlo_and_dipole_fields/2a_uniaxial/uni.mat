@@ -1,11 +1,15 @@
 #------------------------------------------
-# Material file uniaxial anisotropy
+# Sample vampire material file for a 
+# material with uniaxial anisotropy.
+# Provided as part of the 2019 Vampire 
+# Workshop.
+#------------------------------------------
 #---------------------------------------------------
 # Number of Materials
 #---------------------------------------------------
 material:num-materials=1
 #---------------------------------------------------
-# Material 0 
+# Material 1
 #---------------------------------------------------
 material[1]:material-name=Uniaxial
 material[1]:damping-constant=1.0

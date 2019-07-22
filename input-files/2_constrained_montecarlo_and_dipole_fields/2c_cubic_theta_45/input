@@ -1,5 +1,15 @@
 #------------------------------------------
-# Vampire cmc input file
+# Sample vampire input file to perform
+# a constrained monte carlo simulation for
+# calculating torque as a result of anisotropy 
+# of a material with cubic anisotropy.
+# This file calculates at the theta=45 
+# direction.
+# Try choosing a small temperature set
+# and compare the difference in torque
+# with the cubic material from 2b.
+# Provided as part of the 2019 Vampire 
+# Workshop.
 #------------------------------------------
 # Creation attributes:
 #------------------------------------------
@@ -24,9 +34,11 @@ material:file=cub.mat
 #------------------------------------------
 # Simulation attributes:                   
 #------------------------------------------
-sim:minimum-temperature = 0               
-sim:maximum-temperature = 2000
-sim:temperature-increment = 100
+######################################
+sim:minimum-temperature = MIN               
+sim:maximum-temperature = MAX
+sim:temperature-increment = STEP
+######################################
 sim:equilibration-time-steps = 5000
 sim:loop-time-steps = 5000
                           
