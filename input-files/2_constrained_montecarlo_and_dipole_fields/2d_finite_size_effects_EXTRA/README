@@ -1,0 +1,5 @@
+Try creating a bilayer, like in 1e, but with one material uniaxial, and the 
+other with cubic anisotropy. 
+
+This should be a thin film, with more parameters available on page 30 of 
+the associated pdf (inside pdf-slides).
