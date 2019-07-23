@@ -1,0 +1,58 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# a Curie temperature simulation for Ni.
+# Provided as part of the 2019 Vampire 
+# Workshop.
+#------------------------------------------
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+create:crystal-structure=fcc
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+dimensions:unit-cell-size = 3.524 !A
+dimensions:system-size-x = 4.0 !nm
+dimensions:system-size-y = 4.0 !nm
+dimensions:system-size-z = 4.0 !nm
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=Ni.mat
+
+#------------------------------------------
+# Simulation attributes:
+#------------------------------------------
+sim:temperature=300.0
+sim:minimum-temperature=0
+sim:maximum-temperature=800
+sim:temperature-increment=25
+sim:time-steps-increment=1
+sim:equilibration-time-steps=1000
+sim:loop-time-steps=1000
+sim:time-step=1.0E-16
+
+sim:equilibration-time-steps=10000
+sim:total-time-steps=50000
+sim:laser-pulse-power=5.0
+sim:laser-pulse-temporal-profile=two-temperature
+
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+sim:program=laser-pulse
+sim:integrator=llg-heun 
+sim:time-step=1.0e-16
+
+#------------------------------------------
+# data output
+#------------------------------------------
+output:real-time
+output:electron-temperature
+output:phonon-temperature
+output:magnetisation-length

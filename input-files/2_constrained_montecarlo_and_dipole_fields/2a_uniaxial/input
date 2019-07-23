@@ -1,0 +1,69 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# a constrained monte carlo simulation for
+# calculating torque as a result of anisotropy 
+# of a material with uniaxial anisotropy 
+# with a varying angle from the easy axis.
+# Currently, this simulation takes ~50m
+# to run on a single core, try selecting 
+# a small range of temperatures to reduce 
+# this.
+# Provided as part of the 2019 Vampire 
+# Workshop.
+#------------------------------------------
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+create:crystal-structure = bcc
+create:full
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+dimensions:unit-cell-size = 3.54 !A
+dimensions:particle-size = 5 !nm
+dimensions:system-size-x = 5 !nm
+dimensions:system-size-y = 5 !nm
+dimensions:system-size-z = 5 !nm
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=uni.mat
+#------------------------------------------
+# Simulation attributes:                   
+#------------------------------------------
+######################################
+sim:minimum-temperature = 0               
+sim:maximum-temperature = 2000
+sim:temperature-increment = 100
+######################################
+
+sim:equilibration-time-steps = 5000
+sim:loop-time-steps = 5000
+                          
+sim:constraint-angle-theta-minimum=0.0
+sim:constraint-angle-theta-maximum=0.0
+sim:constraint-angle-theta-increment=10.0
+sim:constraint-angle-phi-minimum=0.0
+sim:constraint-angle-phi-maximum=90.0
+sim:constraint-angle-phi-increment=15.0
+
+sim:save-checkpoint=continuous
+sim:save-checkpoint-rate=1
+#sim:load-checkpoint=continue
+#------------------------------------------
+# Program and integrator details           
+#------------------------------------------
+sim:integrator = constrained-monte-carlo
+sim:program = cmc-anisotropy
+#------------------------------------------
+# data output
+#------------------------------------------
+output:temperature
+output:constraint-theta
+output:constraint-phi
+output:mean-magnetisation-length           
+output:mean-total-torque

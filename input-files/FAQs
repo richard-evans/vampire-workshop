@@ -1,0 +1,7 @@
+This document will be updated as the week progresses with frequent questions.
+
+Q. Can the the output line up nicely into columns?
+A. Try "output:fixed-width" in your input file.
+
+Q. What can I do if rasmol opens a black screen when viewing a crystal.xyz file?
+A. Try setting the display mode to "Ball & stick" or "Spacefill".

@@ -1,0 +1,23 @@
+#===================================================
+# Sample vampire material file for Nickel
+# Provided for the vampire workshop 2019.
+# This file is left incomplete as an
+# exercise, try to choose some reasonable
+# parameters based on 1b_Ni
+# Parameters are also available from 
+# https://doi.org/10.1088%2F0953-8984%2F26%2F10%2F103202
+#===================================================
+
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=1
+#---------------------------------------------------
+# Material 1 Nickel Generic
+#---------------------------------------------------
+material[1]:material-name=Ni
+material[1]:damping-constant=d
+material[1]:exchange-matrix[1]=J
+material[1]:atomic-spin-moment=mu !muB
+material[1]:uniaxial-anisotropy-constant=k
+material[1]:material-element=Ni

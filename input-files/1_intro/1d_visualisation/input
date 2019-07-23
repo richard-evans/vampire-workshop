@@ -1,0 +1,43 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# a time series simulation for a rocksalt
+# structure
+# Provided as part of the 2019 Vampire 
+# Workshop.
+#------------------------------------------
+
+#---------------------------------------------------
+# System dimensions
+#---------------------------------------------------
+dimensions:system-size-x=4 !nm
+dimensions:system-size-y=4 !nm
+dimensions:system-size-z=10 !nm
+dimensions:unit-cell-size=3.5 !A
+#---------------------------------------------------
+# Creation attributes
+#---------------------------------------------------
+create:crystal-structure=fcc
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+create:crystal-structure=rocksalt
+#---------------------------------------------------
+# Material files
+#---------------------------------------------------
+material:file=rocksalt.mat
+#---------------------------------------------------
+# Simulation attributes
+#---------------------------------------------------
+sim:temperature=0.1
+sim:total-time-steps=11000
+sim:time-steps-increment=1000
+sim:program=time-series
+sim:integrator=monte-carlo
+#---------------------------------------------------
+# Data output
+#---------------------------------------------------
+output:time-steps
+output:temperature
+output:material-magnetisation
+config:atoms
+config:atoms-output-rate=10
