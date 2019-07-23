@@ -1,0 +1,24 @@
+#1 Login to YARCC
+
+ssh -X username@physlogin.york.ac.uk
+module load POV-Ray/3.7.0
+module list
+
+mkdir plot_results
+cd plot_results
+PWD   
+copy that path
+
+#2 Copy data to YARCC from your local machine
+on the folder where you have the results you want to plot:
+
+./vdc
+scp spins*.pov spins*.inc spins.ini username@physlogin.york.ac.uk:path
+
+
+#3 Run POVRAY on YARCC
+povray spins
+display spins30.png
+
+#4 Copy the results back to your local machine
+scp username@physlogin.york.ac.uk:path/*.png ./

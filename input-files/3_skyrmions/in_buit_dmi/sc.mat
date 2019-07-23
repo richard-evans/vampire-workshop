@@ -1,0 +1,35 @@
+#===================================================
+# Sample vampire material file V3+
+#===================================================
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials = 2
+#---------------------------------------------------
+# Material 1 Cobalt Generic
+#---------------------------------------------------
+material[1]:material-name=Co
+material[1]:damping-constant=1.0
+material[1]:exchange-matrix[1]=1.6e-22
+material[1]:atomic-spin-moment=1.72 !muB
+material[1]:uniaxial-anisotropy-constant=5e-23
+material[1]:minimum-height=0.0
+material[1]:maximum-height=0.5
+material[1]:dmi-constant[2] = 2.26274169979695e-22
+material[1]:initial-spin-direction = random
+
+
+
+#---------------------------------------------------
+# Material 2 Platinum Generic
+#---------------------------------------------------
+material[2]:material-name=Pt
+material[2]:material-element=Fe
+material[2]:minimum-height=0.5
+material[2]:maximum-height=1.0
+material[2]:non-magnetic = keep
+
+
+
+
+

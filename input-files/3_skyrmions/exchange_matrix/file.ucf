@@ -1,0 +1,16 @@
+#Unit cell size:
+1 1 1 
+#Unit cell vectors:
+1	0	0
+0	1	0
+0	0	1
+# Atoms num_atoms, num_materials;id cx cy cz mat cat hcat:
+1	
+0	0	0	0	0	1	0
+# Interactions n exctype;  IID i j dx dy dz Jxx Jxy Jxz Jyx Jyy Jyz Jzx Jzy Jzz:
+4	tensorial
+0	0	0	1	0	0	1.6e-22	0	-1.60e-22	0	1.6e-22	   0          1.60e-22	  0	        1.6e-22
+1	0	0	0	1	0	1.6e-22	0	0	        0	1.6e-22	   -1.60e-22  0	          1.60e-22	1.6e-22
+2	0	0	-1	0	0	1.6e-22	0	1.60e-22	0	1.6e-22	   0          -1.60e-22	  0	        1.6e-22
+3	0	0	0	-1	0	1.6e-22	0	0	        0	1.6e-22	   1.60e-22   0	          -1.60e-22	1.6e-22
+

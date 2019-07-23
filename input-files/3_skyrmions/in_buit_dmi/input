@@ -1,0 +1,79 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# benchmark calculation for v5.0
+#
+#------------------------------------------
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+create:crystal-structure=sc
+
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+dimensions:unit-cell-size = 1 !A
+dimensions:system-size-x = X !nm
+dimensions:system-size-y = Y !nm
+dimensions:system-size-z = Z !nm
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=sc.mat
+
+
+exchange:dmi-cutoff-range = 1.42 !A # sc
+
+# Simulation attributes:
+#------------------------------------------
+sim:total-time-steps=3000000
+sim:equilibration-temperature=30
+sim:equilibration-time-steps = 10000
+#sim:loop-time-steps = 10000
+sim:time-steps-increment = 1
+#sim:minimum-temperature = 0.1
+#sim:maximum-temperature = 25
+sim:time-step=1e-16
+#sim:temperature-increment = 1
+
+
+sim:minimum-temperature=0
+sim:maximum-temperature=30.0
+sim:applied-field-strength=4.0
+sim:cooling-time=100!ps
+sim:cooling-function = gaussian
+sim:integrator-random-seed= 123456
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+
+
+
+sim:program=field-cool
+sim:integrator=llg-heun
+
+
+
+#------------------------------------------
+# data output
+#------------------------------------------
+output:output-rate = 10000
+output:real-time
+output:temperature
+output:mean-magnetisation-length
+output:magnetisation-length
+output:magnetisation
+
+
+config:atoms
+config:atoms-output-rate=100000
+
+screen:real-time
+screen:temperature
+screen:mean-magnetisation-length
+screen:magnetisation-length
+screen:magnetisation
+

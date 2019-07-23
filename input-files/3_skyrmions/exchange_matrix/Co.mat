@@ -1,0 +1,14 @@
+
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=1
+#---------------------------------------------------
+# Material 1 Cobalt Generic
+#---------------------------------------------------
+material[1]:material-name=Co
+material[1]:damping-constant=1.0
+material[1]:initial-spin-direction=random
+material[1]:atomic-spin-moment=1.72 !muB
+material[1]:uniaxial-anisotropy-constant=5e-23
+
