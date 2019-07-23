@@ -1,0 +1,46 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# benchmark calculation for v4.0
+#
+#------------------------------------------
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+dimensions:unit-cell-size = 3.54 !A
+dimensions:system-size-x = 2 !nm
+dimensions:system-size-y = 2 !nm
+dimensions:system-size-z = 8 !nm
+
+create:cylinder
+dimensions:particle-size = 4 !nm
+dimensions:particle-shape-factor-x = 0.5
+dimensions:particle-shape-factor-y = 0.5
+dimensions:particle-shape-factor-z = 2
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=Co.mat
+
+#------------------------------------------
+# Simulation attributes:
+#------------------------------------------
+sim:temperature=0.0
+sim:total-time-steps=300000
+sim:time-step=1.0E-15
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+sim:program=time-series
+sim:integrator=llg-heun
+
+config:atoms
+#------------------------------------------
+# data output
+#------------------------------------------
+output:real-time
+output:magnetisation
+
+screen:time-steps
+screen:magnetisation
