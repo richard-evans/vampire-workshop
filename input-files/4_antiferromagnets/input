@@ -1,0 +1,34 @@
+
+dimensions:system-size-x = 2 !nm
+dimensions:system-size-y = 2 !nm
+dimensions:system-size-z = 2 !nm
+
+
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+
+material:file=AFM.mat
+material:unit-cell-file= "AFM.ucf"
+
+sim:time-step=1.0E-16
+sim:time-steps-increment=1000
+sim:maximum-temperature = 800
+sim:minimum-temperature = 0.0
+sim:cooling-function = linear
+sim:cooling-time = 0.1 !ns
+sim:total-time-steps = 1000000
+sim:temperature = 0
+
+sim:program=field-cool
+sim:integrator=llg-heun
+
+output:real-time
+output:temperature
+output:material-magnetisation
+screen:temperature
+screen:material-magnetisation
+
+config:atoms
+config:atoms-output-rate = 10
+config:output-format = binary

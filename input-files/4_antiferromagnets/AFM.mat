@@ -1,0 +1,22 @@
+
+material:num-materials=2
+
+material[1]:material-name="C"
+material[1]:damping-constant=1.0
+material[1]:atomic-spin-moment=2.6 !muB
+material[1]:material-element="C"
+material[1]:density = 1.00
+material[1]:initial-spin-direction=random
+material[1]:exchange-matrix[1] = 1.4e-21
+material[1]:exchange-matrix[2] = -1.4e-21
+
+
+
+material[2]:material-name="Mn"
+material[2]:damping-constant=1.0
+material[2]:atomic-spin-moment=2.6 !muB
+material[2]:material-element="Au"
+material[2]:density = 1.00
+material[2]:initial-spin-direction=random
+material[2]:exchange-matrix[1] = -1.4e-21
+material[2]:exchange-matrix[2] = 1.4e-21
