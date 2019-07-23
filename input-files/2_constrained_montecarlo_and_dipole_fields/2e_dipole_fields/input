@@ -8,8 +8,8 @@
 # Creation attributes:
 #------------------------------------------
 dimensions:unit-cell-size = 3.54 !A
-dimensions:system-size-x = 2 !nm
-dimensions:system-size-y = 2 !nm
+dimensions:system-size-x = 4 !nm
+dimensions:system-size-y = 4 !nm
 dimensions:system-size-z = 8 !nm
 
 create:cylinder
