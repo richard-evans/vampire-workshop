@@ -30,6 +30,13 @@ sim:temperature=0.0
 sim:total-time-steps=300000
 sim:time-step=1.0E-15
 #------------------------------------------
+# Dipole solver attributes:
+#------------------------------------------
+cells:macro-cell-size=10.1!A #Cubic macrocell side length
+dipole:solver=tensor         # Choose tensor, macrocell or atomistic
+dipole:field-update-rate=100 
+dipole:cutoff-radius=2       # In units of cell size.
+#------------------------------------------
 # Program and integrator details
 #------------------------------------------
 sim:program=time-series
