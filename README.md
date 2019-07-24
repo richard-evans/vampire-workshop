@@ -2,15 +2,21 @@
 Resources and files for the advanced vampire workshop.
 
 In order to get started with this workshop, you should clone this repository using git.
+
 `git clone https://github.com/richard-evans/vampire-workshop.git`.
 
 Git can be accessed through your terminal.
 
 If you ever want to get the most up to date set of files, after you've cloned the repository, you can
 `git fetch`.
+
 This checks the origin repository (the version hosted here) for any changes compared to your local copy. You can then merge these copies into your repository with 
-`git merge origin/master`. You should be sure to be checked out to the local branch you want to merge into, see below. 
+`git merge origin/master`. 
+
+You should be sure to be checked out to the local branch you want to merge into, see below. 
+
 This will overwrite local changes so it's best to checkout your own branch of this repository on your local machine, if you want to make substantial changes.
+
 The `git fetch` and `git merge` can be replaced with a `git pull`, but this will automatically merge without asking about conflicts, so make sure that your changes are committed to a separate branch if you don't want them to be affected.  
 
 In order to checkout your own branch, so that you can keep your own changes to a version of the repository, you can use
