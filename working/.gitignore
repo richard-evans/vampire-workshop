@@ -1,0 +1,7 @@
+# Ignore this whole folder
+*
+# Except for this .gitignore file
+!.gitignore
+# and the README.md
+!README.md
+# This is a workaround for adding an "empty" directory to a git repository. 
