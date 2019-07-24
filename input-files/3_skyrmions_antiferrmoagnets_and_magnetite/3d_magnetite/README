@@ -1,0 +1,5 @@
+Try creating a time series simulation for magnetite at 0K, remember to use 
+"config:atoms" to output system spins.
+
+A checklist for the input and material files is available in the corresponding 
+"pdf-slides" folder. 
