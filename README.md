@@ -33,5 +33,5 @@ input-files/ and pdf-slides/ contain sections separated by day.
 
 input-files/ contains basic input files for demonstrating vampire, as well as occassional brief walkthroughs. pdf-slides/ contains the presented slides from the workshop.
 
-##License
+## License
 The license is available in the LICENSE file. 
