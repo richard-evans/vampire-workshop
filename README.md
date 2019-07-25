@@ -36,7 +36,7 @@ input-files/ and pdf-slides/ contain sections separated by day.
 input-files/ contains basic input files for demonstrating vampire, as well as occassional brief walkthroughs. pdf-slides/ contains the presented slides from the workshop.
 
 ## Getting VAMPIRE
-VAMPIRE is required to run the simulations in this workshop and is available at the [wesbite](https://vampire.york.ac.uk/) and the source code is hosted on [GitHub](https://github.com/richard-evans/vampire).
+VAMPIRE is required to run the simulations in this workshop and is available at the [website](https://vampire.york.ac.uk/) and the source code is hosted on [GitHub](https://github.com/richard-evans/vampire).
 
 ## License
 The license is available in the LICENSE file. 
