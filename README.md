@@ -1,5 +1,5 @@
 # vampire-workshop
-Resources and files for the advanced vampire workshop. The workshop is targetted at scientists and engineers wishing to study magnetic materials and devices at the atomistic level. The workshop will cover the basic and advanced features of the VAMPIRE code which can be used to study a wide range of magnetic materials and phenomena, from zero temperature ground states, equilibrium properties and magnetization dynamics.
+Resources and files for the advanced vampire workshop. The workshop is targetted at scientists and engineers wishing to study magnetic materials and devices at the atomistic level. The workshop will cover the basic and advanced features of the [VAMPIRE code](https://vampire.york.ac.uk/) which can be used to study a wide range of magnetic materials and phenomena, from zero temperature ground states, equilibrium properties and magnetization dynamics.
 
 ## Getting started with this repository
 In order to get started with this workshop, you should clone this repository using git.
@@ -34,6 +34,9 @@ If you would like to run simulations, but don't want to keep your output files, 
 input-files/ and pdf-slides/ contain sections separated by day.
 
 input-files/ contains basic input files for demonstrating vampire, as well as occassional brief walkthroughs. pdf-slides/ contains the presented slides from the workshop.
+
+## Getting VAMPIRE
+VAMPIRE is required to run the simulations in this workshop and is available at the [wesbite](https://vampire.york.ac.uk/) and the source code is hosted on [GitHub](https://github.com/richard-evans/vampire).
 
 ## License
 The license is available in the LICENSE file. 
