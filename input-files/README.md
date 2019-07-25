@@ -5,7 +5,7 @@ Defines simulation parameters, such as:
 
 1. system dimensions, 
 2. program to run and 
-3. output data. <sup>[[1]](#output-text)</sup>
+3. output data. <sup name="output">[[1]](#output-text)</sup>
 
 
 ## `.mat` material file
