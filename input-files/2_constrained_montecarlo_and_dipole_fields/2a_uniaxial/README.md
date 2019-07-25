@@ -10,7 +10,8 @@ Plotting this output should allow you see a total torque curve, sinusoidal with 
 
 
 ## <a name="cmc-ref">[1]</a>:Reference for the constrained monte carlo implementation. [^](#cmc)
-```@article{PhysRevB.82.054415,
+```
+  @article{PhysRevB.82.054415,
   title = {Constrained Monte Carlo method and calculation of the temperature dependence of magnetic anisotropy},
   author = {Asselin, P. and Evans, R. F. L. and Barker, J. and Chantrell, R. W. and Yanes, R. and Chubykalo-Fesenko, O. and Hinzke, D. and Nowak, U.},
   journal = {Phys. Rev. B},
