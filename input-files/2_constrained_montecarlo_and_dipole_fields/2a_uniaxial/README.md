@@ -9,7 +9,7 @@ The temperature and angles sweep is multiplicative, each angle will be simulated
 Plotting this output should allow you see a total torque curve, sinusoidal with respect to angle from the easy axis, with higher temperatures having a lower magnitude. 
 
 
-<sup><a name="cmc-ref">[1]</a>:Reference for the constrained monte carlo implementation. [^](#cmc)</sup>
+## <a name="cmc-ref">[1]</a>:Reference for the constrained monte carlo implementation. [^](#cmc)
 ```@article{PhysRevB.82.054415,
   title = {Constrained Monte Carlo method and calculation of the temperature dependence of magnetic anisotropy},
   author = {Asselin, P. and Evans, R. F. L. and Barker, J. and Chantrell, R. W. and Yanes, R. and Chubykalo-Fesenko, O. and Hinzke, D. and Nowak, U.},
