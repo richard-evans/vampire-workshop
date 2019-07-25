@@ -4,17 +4,18 @@ This folder contains some input files for running a time series LLG-Heun integra
 
 Try running the simulation without and without the input lines beginnig with `dipole:`; you should notice that the dipole field calculations gives a different final spin configuration.
 
-After this you can try changing the lines, choosing macrocell, tensor or atomistic for the solver, and changing the cutoff radius of dipole field interactions. 
+After this you can try changing the lines,
 ```
 dipole:solver=tensor
 dipole:cutoff-radius
 ```
+choosing macrocell, tensor or atomistic for the solver, and changing the cutoff radius of dipole field interactions. 
 
 You should notice a signifcant change in the total run time for each of the solver methods.
 
 | Accuracy | Speed | |
 | ------------- | ------------- | -------------|
 | Atomistic  | Macrocell| Higher
-| Tensor | Tensor| \|\|
+| Tensor | Tensor| |
 | Macrocell| Macrocell| Lower
 
