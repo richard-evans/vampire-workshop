@@ -3,5 +3,5 @@
 # Except for this .gitignore file
 !.gitignore
 # and the README.md
-!README.md
+!README.markdown
 # This is a workaround for adding an "empty" directory to a git repository. 
