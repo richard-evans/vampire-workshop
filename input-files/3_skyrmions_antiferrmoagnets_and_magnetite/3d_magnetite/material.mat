@@ -1,0 +1,39 @@
+#----------------------------------------------------------
+#         Generated material file for vampire v4
+#
+#----------------------------------------------------------
+material:num-materials = 3
+#----------------------------------------------------------
+material[1]:material-name = FeA (3+)          
+material[1]:damping-constant = 0.063
+material[1]:atomic-spin-moment = 5 !muB
+material[1]:cubic-anisotropy-constant = -1.77E-24
+material[1]:material-element = Mg
+material[1]:initial-spin-direction = random #-1,-1,-1
+material[1]:exchange-matrix[1] = -6.30863E-22
+material[1]:exchange-matrix[2] = -5.06981E-21
+material[1]:exchange-matrix[3] = 0
+material[1]:unit-cell-category = 1
+#----------------------------------------------------------
+material[2]:material-name = FeB (2.5+)
+material[2]:damping-constant = 0.063
+material[2]:atomic-spin-moment = 4.5 !muB
+material[2]:cubic-anisotropy-constant = -1.77E-24
+material[2]:material-element = Al
+#material[2]:initial-spin-direction = random #1,1,1
+material[2]:exchange-matrix[1] = -5.06981E-21
+material[2]:exchange-matrix[2] = 9.76252E-22
+material[2]:exchange-matrix[3] = 0
+material[2]:unit-cell-category = 2
+#----------------------------------------------------------
+material[3]:material-name = O
+material[3]:non-magnetic = remove
+material[3]:damping-constant = 0.063
+material[3]:atomic-spin-moment = 1.0 !muB
+material[3]:cubic-anisotropy-constant = -1.77E-24
+material[3]:material-element = O
+material[3]:exchange-matrix[1] = 0
+material[3]:exchange-matrix[2] = 0
+material[3]:exchange-matrix[3] = 0
+material[3]:unit-cell-category = 3
+#----------------------------------------------------------
