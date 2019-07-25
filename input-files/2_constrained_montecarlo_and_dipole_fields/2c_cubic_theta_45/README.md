@@ -1,6 +1,6 @@
-# Uniaxial anisotropy 
+# Cubic anisotropy 
 
-This folder contains some input files for running a constrained monte-carlo simulation (citation <sup name="cmc">[[1]](#cmc-ref)</sup>). This refers to the `cmc-anisotropy` program within vampire. 
+This folder contains some input files for running a constrained monte-carlo simulation (citation <sup name="cmc">[[1]](#cmc-ref)</sup>), this time for a material with positive cubic anisotropy. This refers to the `cmc-anisotropy` program within vampire. 
 
 You can copy these files to the `working` directory and run vampire there. This will give you an output file called `output`, the contents of which are defined by the input file. 
 
