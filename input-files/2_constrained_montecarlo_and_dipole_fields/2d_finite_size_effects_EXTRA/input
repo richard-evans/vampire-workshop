@@ -1,0 +1,75 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# a hybrid constrained monte carlo simulation for
+# for calculating torque in a bilayer 
+# structure where the bottom layer has
+# cubic anisotropy and the top layer
+# has uniaxial anisotropy
+# This file constraints the direction of 
+# the uniaxial material to be along 
+# the easy-axis (z-axis) while
+# calculates the torque acting on the system
+# for the theta=0 direction for the 
+# cubic anisotropy material.
+# Try choosing a small temperature set
+# and compare the difference in torque
+# with the uniaxial material from 2a.
+# Provided as part of the 2019 Vampire 
+# Workshop.
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+create:crystal-structure = bcc
+create:full
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+dimensions:unit-cell-size = 3.0 !A
+dimensions:particle-size = 5 !nm
+dimensions:system-size-x = 5 !nm
+dimensions:system-size-y = 5 !nm
+dimensions:system-size-z = 5 !nm
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=bilayer.mat
+#------------------------------------------
+# Simulation attributes:                   
+#------------------------------------------
+######################################
+sim:minimum-temperature = 0               
+sim:maximum-temperature = 600
+sim:temperature-increment = 300
+######################################
+sim:equilibration-time-steps = 5000
+sim:loop-time-steps = 5000
+                          
+sim:save-checkpoint=end 
+#sim:load-checkpoint=continue
+#------------------------------------------
+# Program and integrator details           
+#------------------------------------------
+sim:integrator = hybrid-constrained-monte-carlo
+sim:program = hybrid-cmc
+#------------------------------------------
+# data output
+#------------------------------------------
+screen:temperature
+screen:material-constraint-theta
+screen:material-constraint-phi
+screen:mean-magnetisation-length           
+screen:mean-total-torque
+screen:material-mean-torque
+
+output:temperature
+output:material-constraint-theta
+output:material-constraint-phi
+output:mean-magnetisation-length           
+output:mean-total-torque
+output:material-mean-torque
+
+config:atoms
+config:atoms-output-rate=1
