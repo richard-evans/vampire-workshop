@@ -1,0 +1,23 @@
+
+######################################
+#fe.mat
+material[1]:damping-constant=0.0
+material[1]:damping-constant-lattice=0
+
+
+######################################
+#input
+sim:temperature = 0
+
+#some initial energy to go into the system
+sim:equilibration-temperature=600
+spin-lattice:initial-random-displacement=0.1
+spin-lattice:initial-thermal-velocity=600
+
+#output the energies
+output:kinetic-energy
+output:potential-energy
+output:sld-exchange-energy
+output:sld-coupling-energy
+output:output-rate=1
+

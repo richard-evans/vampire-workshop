@@ -1,0 +1,26 @@
+#===================================================
+# Sample vampire material SLD
+#===================================================
+
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=1
+#---------------------------------------------------
+# Material 1 BCC Fe 
+#---------------------------------------------------
+material[1]:material-name=Fe
+material[1]:damping-constant=0.0
+material[1]:atomic-spin-moment=2.22 !muB
+material[1]:initial-spin-direction=0,0,0.98
+#material[1]:uniaxial-anisotropy-constant=1.0e-24
+
+# SLD Parameters
+#---------------------------------------------------
+material[1]:mass=5.7915e-3
+material[1]:damping-constant-lattice=0
+material[1]:exchange-J0=0.904 !eV
+material[1]:harmonic-potential-V0=0.15 !eV
+material[1]:coupling-C0=0.5
+
+

@@ -1,0 +1,74 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# benchmark calculation for v4.0
+#
+#------------------------------------------
+create:crystal-structure=bcc
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+dimensions:unit-cell-size = 2.87 !A
+dimensions:system-size-x = 1.148 !nm
+dimensions:system-size-y = 1.148 !nm
+dimensions:system-size-z = 1.148 !nm
+
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file = fe.mat
+
+
+# Simulation attributes:
+#------------------------------------------
+sim:equilibration-time-steps = 5000
+sim:loop-time-steps = 1000
+sim:time-steps-increment = 10
+
+sim:minimum-temperature = 0
+sim:maximum-temperature = 1200
+sim:temperature-increment = 25
+sim:time-steps-increment = 1
+
+sim:time-step = 1 !fs
+
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+sim:program =curie-temperature
+sim:integrator = spin-lattice
+
+spin-lattice:potential-cutoff-range=7.8 !A
+spin-lattice:fields-cutoff-range=3.75 !A
+spin-lattice:coupling=pseudodipolar
+spin-lattice:potential=harmonic
+
+exchange:interaction-range = 3
+
+config:atoms
+config:atoms-output-rate=10000
+config:sld
+
+output:temperature
+output:magnetisation
+
+output:spin-temperature
+output:lattice-temperature
+output:mean-magnetisation-length
+
+output:output-rate=1
+
+screen:temperature
+screen:magnetisation
+screen:spin-temperature
+screen:lattice-temperature
+screen:output-rate=1
+screen:mean-magnetisation-length
+
+
+
