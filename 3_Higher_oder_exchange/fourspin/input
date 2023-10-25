@@ -1,0 +1,55 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# benchmark calculation for v4.0
+#
+#------------------------------------------
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+dimensions:system-size-x = 1.2 !nm
+dimensions:system-size-y = 1.2 !nm
+dimensions:system-size-z = 1.2 !nm
+
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file =ferh.mat
+material:unit-cell-file = file.ucf
+#------------------------------------------
+# Simulation attributes:
+#------------------------------------------
+
+sim:time-steps-increment = 1
+sim:total-time-steps = 100000
+sim:time-step = 1 !fs
+sim:maximum-temperature = 800
+sim:minimum-temperature = 0
+sim:cooling-time = 0.1 !ns
+sim:cooling-function = linear
+sim:equilibration-time-steps=0
+sim:equilibration-temperature=800
+
+exchange:four-spin-cutoff-1=1.0
+exchange:four-spin-cutoff-2=1.414
+
+
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+sim:program = field-cool
+sim:integrator = llg-heun
+#------------------------------------------
+# data output
+#------------------------------------------
+output:real-time
+output:temperature
+output:magnetisation
+output:material-magnetisation
+
+
+config:atoms
+config:atoms-output-rate = 10000
