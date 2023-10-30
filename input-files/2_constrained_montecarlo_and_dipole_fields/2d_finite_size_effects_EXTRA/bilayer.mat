@@ -1,0 +1,50 @@
+#------------------------------------------
+# Sample vampire material file for a 
+# material with cubic anisotropy.
+# Provided as part of the 2019 Vampire 
+# Workshop.
+#------------------------------------------
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=2
+#---------------------------------------------------
+# Material 1 Generic cubic Fe
+#---------------------------------------------------
+material[1]:material-name=Cubic
+material[1]:damping-constant=1.0
+material[1]:exchange-matrix[1]=7.05e-21
+material[1]:exchange-matrix[2]=11.6e-21
+material[1]:atomic-spin-moment=2.22 !muB
+material[1]:cubic-anisotropy-constant=5.65e-25
+material[1]:material-element=Fe
+material[1]:minimum-height=0.0
+material[1]:maximum-height=0.5
+material[1]:initial-spin-direction = 0,0,1
+material[1]:constrained=true
+material[1]:constraint-angle-theta-minimum=0.0
+material[1]:constraint-angle-theta-maximum=0.0
+material[1]:constraint-angle-theta-increment=10.0
+material[1]:constraint-angle-phi-minimum=0.0
+material[1]:constraint-angle-phi-maximum=90.0
+material[1]:constraint-angle-phi-increment=11.25
+#-----
+# Material 2
+#-----
+material[2]:material-name=Uniaxial
+material[2]:damping-constant=1.0
+material[2]:exchange-matrix[1]=11.6e-21
+material[2]:exchange-matrix[2]=11.6e-21
+material[2]:atomic-spin-moment=1.72 !muB
+material[2]:uniaxial-anisotropy-constant=1.0e-24
+material[2]:material-element=Co
+material[2]:minimum-height=0.5
+material[2]:maximum-height=1.0
+material[2]:initial-spin-direction = 0,0,1
+material[2]:constrained=true
+material[2]:constraint-angle-theta-minimum=0.0
+material[2]:constraint-angle-theta-maximum=0.0
+material[2]:constraint-angle-theta-increment=10.0
+material[2]:constraint-angle-phi-minimum=0.0
+material[2]:constraint-angle-phi-maximum=0.0
+material[2]:constraint-angle-phi-increment=11.25
