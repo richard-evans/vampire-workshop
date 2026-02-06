@@ -1,0 +1,50 @@
+###### Input File ######
+# Material file
+material:file = SC.mat
+
+# system dimensions 
+create:crystal-structure=sc
+dimensions:unit-cell-size=2.5
+dimensions:system-size-x=100
+dimensions:system-size-y=100
+dimensions:system-size-z=100 
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+
+
+sim:time-step=1e-16
+sim:time-steps-increment = 20
+
+#Quick equlibration
+sim:preconditioning-steps=1000
+sim:equilibration-time-steps=10000
+sim:equilibration-temperature=30
+
+#Time for spin wave calculations
+sim:total-time-steps=50000
+sim:temperature=30
+
+
+# Program settings
+sim:program = spin-waves
+sim:integrator = llg-heun
+
+# Spinwave Info
+spinwaves:num-spectrums=1
+spinwaves[1]:material = 1
+
+#spinwaves:kfile = kpoints.dat
+#spinwaves:filetype = path
+#spinwaves[1]: one - sided = true
+#spinwaves[1]: complex - magnitude = true
+#spinwaves[1]: normalise - each - k = true
+#spinwaves[1]:component = sx
+
+# Regular Output
+output:time-steps
+screen:time-steps
+screen:magnetisation
+output:magnetisation
+screen:output-rate=10000
+
